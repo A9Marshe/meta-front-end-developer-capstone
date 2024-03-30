@@ -1,6 +1,10 @@
+# Welcome to Little Lemon!
+
+This project was created as part of Meta Front End Developer Capstone course
+
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
