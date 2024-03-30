@@ -1,36 +1,51 @@
-const Footer = () => {
+import React from "react";
+import { Link } from "react-router-dom";
+import footlg from "../assets/footer-large.png";
+
+export default function Footer() {
   return (
     <footer>
-      <img />
-      <section>
-        <h3>Doormat Navigation</h3>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Menu</li>
-          <li>Reservations</li>
-          <li>Order Online</li>
-          <li>Login</li>
-        </ul>
-      </section>
-
-      <section>
-        <h3>Contact</h3>
-        <ul>
-          <li>Address</li>
-          <li>Phone Number</li>
-          <li>Email</li>
-        </ul>
-      </section>
-      <section>
-        <h3>Social Media Links</h3>
-        <ul>
-          <li>Address</li>
-          <li>Phone Number</li>
-          <li>Email</li>
-        </ul>
-      </section>
+      <div id="ftimg">
+        <img src={footlg} alt="footer logo" />
+      </div>
+      <div id="doormat">
+        <p>Doormat</p>
+        <p>
+          <a href="#header">Navigation</a>
+        </p>
+        <p>
+          <Link to="/">Home</Link>
+        </p>
+        <p>
+          <a href="#about">About</a>
+        </p>
+        <p>
+          <a href="#highlights">Menu</a>
+        </p>
+        <p>
+          <Link to="/bookings">Reservations</Link>
+        </p>
+        <p>
+          <Link to="/bookings">Order Online</Link>
+        </p>
+        <p>
+          <Link to="/">Login</Link>
+        </p>
+      </div>
+      <div id="contact">
+        <p>Contact</p>
+        <p></p>
+        <p>Address</p>
+        <p>Phone Number</p>
+        <p>Email</p>
+      </div>
+      <div id="smedia">
+        <p>Social Media Links</p>
+        <p></p>
+        <p>Address</p>
+        <p>Phone Number</p>
+        <p>Email</p>
+      </div>
     </footer>
   );
-};
-export default Footer;
+}
